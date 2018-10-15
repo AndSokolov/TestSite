@@ -1,0 +1,288 @@
+
+body{
+    font:18px/1.4 Arial sans-serif;
+    margin: 0;
+
+    background: url('../Images/background.jpg') no-repeat  center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover ;
+
+
+}
+h1{
+    font-size:120% ;
+}
+#container{
+    width: 1200px;
+    margin:0 auto;
+    background-color: #FFF8DC;
+    position: relative;
+
+}
+header{
+    background-color:#efe5d0;
+    opacity: 0.85;
+    height: 100px;
+    font:italic bold 15px/1 Georgia  serif;
+    position: relative; /* Чтобы абсолютные размеры детей позиционировались относительно header*/
+
+}
+
+header img{
+    padding-left: 30px;
+    height: 100px;
+    width: 180px;
+}
+
+
+header ul{
+    height: 90px;  /* Чуть меньше чем высота родителя*/
+    margin: 0;
+    margin-top:-100px; /* Сместим блок к верхней границе родителя*/
+    margin-left: 78%; /* Сместим блок вправо на 78% от ширины родителя*/
+    width: 250px;
+    padding:5px 0; /* Зададим вверхние и нижние отступы 5px  в итоге 5+5+90=100 блок ровно вписывается в родителя*/
+
+}  /* ЛУЧШЕ КОНЕЧНО БЫЛО ИСПОЛЬЗОВАТЬ FLOAT right*/
+
+
+header li:nth-child(1) {
+    list-style-image: url('../Images/pizza4.png');
+}
+
+header li:nth-child(2) {
+    list-style-image: url('../Images/hot56.png');
+}
+header li:nth-child(3) {
+    list-style-image: url('../Images/plate7.png');
+}
+
+header div{  /* Селектор для заголовка (картинка чашка кофе + назв: Кафе шоколадница*/
+    height: 100%;
+    width: 500px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    text-align: center;
+    margin: 0;
+    margin-left: -250px;  /* Центрируем по горизонтали*/
+    padding: 0;
+
+    font:italic 700 32px/100px 'Times New Roman', serif; /* Здесь line-height равна высоте элемента чтобы отцентровать одну строку по вертикали*/
+
+}
+#logo{
+    width: 110px;
+    height: 80px;
+    vertical-align: middle; /* центрируем изображение относ. окружающего текста*/
+    padding: 0;
+
+}
+
+a:link,a:visited{
+    text-decoration: none;
+    color:black;
+}
+.NavigationMenu{
+    position: relative;
+    margin: 10px 0 0 0;
+    padding-left: 1px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom,#efe5d0,Wheat );
+    text-align: center;
+    font-size: 0;  /* Чтобы убрать расстояния из за глюка инлайн блок*/
+    height: 50px;
+
+}
+li:hover{
+    cursor: pointer;
+}
+.NavigationMenu li{
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0;
+
+
+}
+
+li#order{
+    position: absolute;
+    top:0px;
+    right: 20px;
+    z-index: 9999;
+    width: 220px;
+    border: 1px solid LimeGreen;
+    background: LimeGreen;
+
+    border-radius: 12px;
+    box-shadow: 8px 11px 12px -7px #000000;
+    text-shadow: 0 1px 15px black;
+    cursor:pointer;
+    transition: height 400ms;
+}
+li#order ul{
+    margin: 0;
+    padding: 0;
+}
+li#order li{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    height: 50px;
+}
+li#order li a:hover{
+    color:#DEB887;
+}
+.NavigationMenu__selected {
+    background-color: #DEB887;
+}
+
+#menu{
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    margin:10px 0 0 10px ;
+    position: relative;
+    width: 300px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+#menu>ul{
+    position: absolute;
+    top:49%;
+    left:50px;
+    list-style: none;
+}
+#menu ul li{
+    display:block;
+    border: 1px solid #c2bf80;
+    background: rgba(249, 246, 168, 0.38);
+    width: 200px;
+    height:40px;
+    transition: height .3s ease-in-out;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+
+
+}
+#menu>ul>li:nth-child(1)>a::before{
+    content: url("../Images/plate7.png") ' ';
+}
+#menu>ul>li:nth-child(2)>a::before{
+    content: url("../Images/covered16.png") ' ';
+}
+#menu>ul>li:nth-child(3)>a::before{
+    content: url("../Images/pizza4.png") ' ';
+}
+#menu>ul>li:nth-child(4)>a::before{
+    content: url("../Images/default.png") ' ';
+}
+#menu>ul>li:nth-child(5)>a::before{
+    content: url("../Images/porridge.png") ' ';
+}
+#menu>ul>li:nth-child(6)>a::before{
+    content: url("../Images/hot56.png") ' ';
+}
+
+#menu a{
+    display: block;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 0;
+}
+#menu a:hover{
+    text-shadow: 1px -1px 1px rgba(115, 115, 115, 0.73);
+}
+#menu>ul>li:hover{
+    height: 120px;
+}
+#menu  li ul {
+    background: rgba(218, 215, 137, 0.44);
+}
+#menu li ul a{
+    text-align: center;
+    font: italic bold 16px/40px Arial sans-serif;
+}
+#main{
+    margin:0 15px 0 0;
+    padding: 0;
+    float: right;
+    width: 860px;
+
+}
+.block{
+    position: relative;
+    margin: 0 auto;
+    width: 764px;
+    border: 1px solid #DEB887;
+    border-radius: 20px;
+    background: rgba(226, 188, 139, 0.66);
+}
+.cover{
+    padding: 0;
+    width: 624px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.gallery{
+    transition: margin-left 0.35s ease-in-out ;
+    width: 3000px;
+    height: 212px;
+    font-size: 0;
+    padding: 0;
+}
+.gallery__item{
+
+    border: 6px ridge rgba(209, 209, 74, 0.61);
+    display: inline-block;
+}
+
+.buttons{
+    position: absolute;
+    top:50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    background: rgba(188, 188, 188, 0.47);
+    font-size: 25px;
+    color: #696969;
+    border: 1px solid rgba(160, 160, 160, 0.61);
+    border-radius:50%;
+    cursor: pointer;
+}
+.buttons:hover{
+    background: rgba(151, 151, 151, 0.66);
+    border: 1px solid rgba(116, 116, 116, 0.61);
+    color: #383838;
+}
+.buttons:focus{
+    outline: none;
+}
+.buttonLeft{
+    left: 5px;
+}
+.buttonRight{
+    right: 5px;
+}
+footer{
+    clear: both;
+    height: 50px;
+    margin-top:10px;
+    background-color: #DEB887;
+
+    line-height: 50px;
+    text-align: center;
+    font-size: 90%;
+}
+
+
+
+/* https://toster.ru/q/53608*/

@@ -1,0 +1,105 @@
+.field{
+    float: right;
+    width: 860px;
+    margin: 10px 15px 0 0;
+    padding: 0;
+}
+.field__furniture{
+    position: relative;
+    height: 100px;
+    background: rgba(244, 203, 154, 0.45);
+    border: 2px solid #cda779;
+}
+.field__room{
+    position: relative;
+    background: rgba(244, 240, 144, 0.58);
+    height: 600px;
+    line-height: 600px;
+    text-align: center;
+    border: 2px solid #cda779;
+}
+.room__title{
+    font:italic 500 55px 'Times New Roman', serif ;
+    color: rgb(235, 194, 147);
+}
+
+.furniture__draggable{
+    position: absolute;
+    top:5px;
+}
+
+.table{
+    cursor: pointer;
+    left: 5px;
+    width: 150px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    border: 1px outset #d8b187;
+    border-radius: 4px;
+    background: rgba(218, 180, 132, 0.9);
+    transition: width 0.4s,height 0.4s;
+}
+.table__count{
+    font: italic 600 24px 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.89);
+}
+.table__turn{
+    display: none;
+    position: absolute;
+    right: 3px;
+    top:3px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    color: rgba(79, 79, 79, 0.88);
+    border-radius: 50%;
+    background: rgba(148, 148, 148, 0.73);
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.table:hover .table__turn{
+    display: block;
+}
+.table__turn:hover{
+    color: rgb(0, 0, 0);
+    background: rgba(115, 115, 115, 0.71);
+}
+.chair{
+
+    cursor: pointer;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px outset #d8b187;
+    border-radius: 4px;
+    background: rgba(218, 180, 132, 0.9);
+}
+.table:hover,.chair:hover{
+    background: rgb(209, 173, 129);
+}
+.furniture__header{
+    float: right;
+    margin-right:35px;
+    font: italic 600 24px/100px 'Times New Roman', serif;
+}
+.room__button{
+    position: absolute;
+    right: 5px;
+    top:5px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: rgba(109, 109, 109, 0.83);
+    border-radius: 50%;
+    background: rgba(148, 148, 148, 0.46);
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.room__button:hover{
+    background: rgba(116, 116, 116, 0.66);
+    color: rgb(94, 94, 94);
+}

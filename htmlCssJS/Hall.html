@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <meta charset="UTF-8">
+    <title>Шоколадница</title>
+    <link rel="stylesheet" type="text/css" href="Css.css">
+    <link rel="stylesheet" type="text/css" href="Hall.css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.remove"></script>
+</head>
+<body>
+
+<div id="container">
+    <header>
+        <img src="../Images/train.png" >
+
+        <div>
+            <img src="../Images/cup_PNG1974.png" id="logo" > Кафе Шоколадница
+        </div>
+
+        <ul>
+            <li>тел: +79234561723</li>
+            <li>email: Shokoladnik@gmail.com</li>
+            <li>адрес: г.Москва ул. Вавилова 2</li>
+        </ul>
+
+    </header>
+
+
+    <ul class="NavigationMenu">
+        <li> <a href="Index.html">Главная</a></li>
+        <li><a href="AboutMe.html">О себе</a></li>
+        <li ><a href="History.html">История</a></li>
+        <li><a href="Media.html">Галерея</a></li>
+        <li class="NavigationMenu__selected"><a href="Hall.html">Банкетный зал</a></li>
+        <li id="order">Сделать заказ</li>
+    </ul>
+
+    <div class="field">
+        <div class="field__furniture furniture" >
+            <div class="furniture__draggable table"><span class="table__count">8</span></div>
+            <div class="furniture__draggable chair"></div>
+            <span class="furniture__header">разместите мебель в банкетный зал как вам удобно</span>
+        </div>
+        <div class="field__room room">
+        <span class="room__title">Банкетный зал</span>
+        <div class="room__button">↻</div>
+        </div>
+    </div>
+    <div id="menu">
+
+        <img src="../Images/menu.jpg">
+        <ul>
+            <li><a href="">Бизнес Ланч</a>
+                <ul>
+                    <li><a href="https://www.youtube.com/">Диетический вариант</a></li>
+                    <li><a>По-королевски</a></li>
+                </ul>
+            </li>
+            <li><a href="">Фирменные блюда</a>
+                <ul>
+                    <li><a href="https://www.youtube.com/">Свинина от шефа</a></li>
+                    <li><a>Плов от шефа</a></li>
+                </ul></li>
+            <li><a href="">Пицца</a>
+                <ul>
+                    <li><a href="https://www.youtube.com/">Моцарелла</a></li>
+                    <li><a>Мексикана</a></li>
+                </ul></li>
+            <li><a href="">Салаты</a>
+                <ul>
+                    <li><a href="https://www.youtube.com/">Салат Цезарь</a></li>
+                    <li><a>Свекла с чесноком</a></li>
+                </ul></li>
+            <li><a href="">Холодные закуски</a>
+                <ul>
+                    <li><a href="https://www.youtube.com/">Икра черная</a></li>
+                    <li><a>Икра красная</a></li>
+                </ul></li>
+            <li><a href="">Первые блюда</a>
+                <ul>
+                    <li><a href="https://www.youtube.com/">Борщ</a></li>
+                    <li><a>Суп гороховый</a></li>
+                </ul></li>
+        </ul>
+    </div>
+
+
+    <footer>
+        Все права защищены 2018г.
+    </footer>
+
+</div>
+
+<script  src="menuWindow.js">
+</script>
+<script src="Hall__draggable.js"></script>
+</body>
+</html>

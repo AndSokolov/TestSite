@@ -1,0 +1,33 @@
+.media-content{
+    float: right;
+    width: 860px;
+    margin: 10px 15px 0 0;
+    padding: 0;
+}
+
+.media-content__gallery{
+    margin-bottom: 100px;
+}
+.galleryImg{
+    list-style: none;
+    font-size: 0;
+}
+.galleryImg__item{
+    display:inline-block ;
+    margin-left: 3px;
+}
+
+.galleryImg__item:first-child{
+    margin-left: 0;
+}
+
+.galleryImg__item a{
+    display: block;
+    width: 120px;
+    box-sizing: border-box;
+    border:1px solid rgba(115, 80, 57, 0.75);
+}
+.galleryImg__item a:hover{
+    border:1px solid rgb(0, 0, 0);
+    box-shadow: 0px -3px black;
+}

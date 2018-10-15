@@ -1,0 +1,68 @@
+
+.threeColumn{
+    float: right;
+    text-align: left;
+}
+#floatContainer{
+    margin: 10px 10px 0 0;
+    width: 870px;
+    padding: 0;
+}
+
+.threeColumn h2{
+    color:#CECA46;
+    line-height: 1;
+    margin:5px;
+    text-align:center;
+}
+#imagesList{
+    width:215px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#imagesList img{
+    display: block;
+    padding: 5px 0;
+    border-bottom: 6px ridge #EAE662 ;
+}
+#imagesList img:nth-child(1){
+    padding-top:0;
+}
+#AboutMe{
+    box-sizing: border-box;
+    width:520px;
+    padding: 0 10px 10px;
+}
+
+#boxShadow{
+    padding: 0;
+    text-align: center;
+    width: 125px;
+    margin: 30px 10px 0 0;
+    font: italic 700 35px 'Times New Roman', serif;
+    white-space: pre;
+    background: rgb(245,222, 179);
+    box-shadow: 1px -1px  rgb(242,219, 176),2px -2px  rgb(241,218, 175), 3px -3px  rgb(240,217, 174), 4px -4px  rgb(239,216, 173),5px -5px  rgb(238,215, 172),6px -6px  rgb(237,214, 171),
+    7px -7px  rgb(236,213, 170),8px -8px  rgb(235,212, 169);
+
+}
+.buttonUp{
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -550px;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    color: rgba(109, 109, 109, 0.83);
+    border-radius: 50%;
+    background: rgba(148, 148, 148, 0.66);
+    line-height: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+.buttonUp:hover{
+    background: rgba(116, 116, 116, 0.66);
+    color: rgb(94, 94, 94);
+}
