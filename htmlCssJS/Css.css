@@ -272,6 +272,20 @@ ul{
 .buttonRight{
     right: 5px;
 }
+
+.container_clock{
+    font:italic 700  20px 'Times New Roman', serif;
+    position: absolute;
+    padding: 0;
+    top:50%;
+    margin-top: -0.65em;
+    left:20px;
+
+}
+.clock{
+  color: #a8660f;
+}
+
 footer{
     clear: both;
     height: 50px;
